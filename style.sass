@@ -1,0 +1,192 @@
+/*
+ *  ######   FARB-SCHEMA   #######
+ */
+$primary-light-1: rgb(223, 219, 216)
+$primary-light-2: rgb(161, 149, 138)
+$primary-light-3: rgb(123, 101, 83)
+$primary-light-4: rgb(81, 55, 34)
+$primary-light-5: rgba(42, 23, 8, 0.89)
+
+/*
+ *  ######   Z-INDEX   #######
+ */
+$z-lvl-1: 2000
+$z-lvl-2: 1000
+$z-lvl-3: 500
+$z-lvl-4: 100
+
+
+/*
+ *  ######   GRUNDGERÜST   #######
+ */
+$widthBaseFrame: 1300px
+
+body
+  background-color: $primary-light-1
+
+  .wrapper
+    margin: 0 auto
+    padding: 0
+    width: $widthBaseFrame
+
+
+header
+  background-image: url('images/background.png')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: top
+  border-bottom: 1px solid black
+  position: relative
+  height: 300px
+  overflow: hidden
+  box-shadow: inset 0px -140px 90px -60px $primary-light-5
+  #banner
+    margin: 200px auto 0 auto
+    padding: 0
+    background-color: rgba(62, 43, 34, 0.6)
+    widtH: 100%
+    height: 100px
+
+    h1
+      margin: 0 auto
+      padding: 24px
+      width: 480px
+
+
+main
+  .row
+    padding: 0 10px
+
+
+footer
+  height: 200px
+  border-top: 2px solid $primary-light-1
+  background-color: $primary-light-5
+
+  p
+    font-weight: bold
+
+
+
+/*
+ *  ######   Z-INDEX   #######
+ */
+h1
+  font-family: Verdana, monospace
+  font-size: 34pt
+  font-weight: bold
+  color: $primary-light-1
+
+
+p
+  line-height: 14pt
+  font-family: Verdana, monospace
+  font-size: 14pt
+  color: $primary-light-1
+
+
+
+/*
+ *  ######   Content   #######
+ */
+div#buttonFrame
+  margin: 5px auto
+  padding: 10px
+  width: 100%
+
+  button
+    margin: 0
+    padding: 0 40px
+    border: 0
+    height: 50px
+    border-bottom: 4px solid $primary-light-4
+    background-color: $primary-light-3
+    color: $primary-light-1
+    box-shadow: 0 2px 8px $primary-light-5
+
+
+  button.playButton
+    margin-top: 5px
+
+  button:hover
+    border-bottom: 2px solid $primary-light-3
+    background-color: $primary-light-2
+    color: $primary-light-5
+    box-shadow: 0 4px 8px $primary-light-2
+
+
+div#messageFrame
+  padding: 10px 0
+
+  p
+    color: $primary-light-5
+
+
+div#sideBoard
+  margin: 15px auto
+  padding: 10px
+  background-color: $primary-light-2
+
+
+div#playGround
+  margin: 15px auto
+  padding: 10px
+  background-color: $primary-light-2
+
+  table#chessBoard
+    margin: 0 auto
+    padding: 0
+    border-collapse: collapse
+
+    .side
+      background-color: $primary-light-5
+      color: $primary-light-1
+
+
+    .field-dark
+      background-color: $primary-light-4
+
+    .field-light
+      background-color: $primary-light-2
+
+    td
+      margin: auto
+      padding: 0
+      border: 1px solid $primary-light-5
+      width: 60px
+      height: 60px
+      text-align: center
+      font-weight: bold
+
+
+    .clickable
+      cursor: pointer
+
+
+ol#console
+  margin: 15px auto
+  padding: 15px
+  overflow-y: scroll
+  background-color: $primary-light-2
+
+  p
+    color: $primary-light-5
+
+
+i.white
+  font-size: 24pt
+  font-weight: bold
+  color: white
+
+
+i.black
+  font-size: 24pt
+  font-weight: bold
+  color: black
+
+
+i.selected
+  font-size: 24pt
+  font-weight: bold
+  color: rgb(214, 204, 0)
+

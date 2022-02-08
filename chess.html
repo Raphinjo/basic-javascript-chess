@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Chess</title>
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="./css/font-awesome-all.css" rel="stylesheet" >
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <header class="wrapper">
+        <div id="banner">
+            <h1>Raphael's Chess</h1>
+        </div>
+    </header>
+
+    <main class="wrapper">
+        <div class="row">
+            <div id="buttonFrame" class="col-12 text-center">
+                <button class="playButton" onclick="initFreeGame()">Starte freies Spiel</button>
+                <button class="playButton" onclick="initSpainGame()">Starte spanisches Spiel</button>
+            </div>
+            <div id="messageFrame" class="col-12 text-center">
+
+            </div>
+            <div id="sideBoard" class="col-3">
+
+            </div>
+
+            <div id="playGround" class="col-6">
+
+            </div>
+            <ol id="console" class="col-3">
+            </ol>
+
+        </div>
+    </main>
+
+    <footer class="wrapper">
+        <div class="text-center mt-4">
+            <p>&copy; Chess - All Rights Reserved 2022</p>
+            <p> Raphael Dobesch</p>
+        </div>
+    </footer>
+</div>
+<!-- Javascripts -->
+<script src="./js/bootstrap.bundle.js"></script>
+<script src="./chess.js"></script>
+</body>
+</html>
